@@ -22,4 +22,7 @@ for guesses_taken in range(6):
 if guess == number:
     guesses_taken = guesses_taken + 1
     print(f'good job, {my_name}! you guessed my number in {guesses_taken} guesses!')
-    print ('good job, you win')  
+
+if guess == number:
+    print(f'no, the number I was thinking of was {number}')
+   
