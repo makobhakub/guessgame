@@ -21,5 +21,5 @@ for guesses_taken in range(6):
     
 if guess == number:
     guesses_taken = guesses_taken + 1
-    print(f'good job, {my_name}!' you guessed my number in {guesses_taken} guesses!
-    print ('good job, you win') 
+    print(f'good job, {my_name}! you guessed my number in {guesses_taken} guesses!')
+    print ('good job, you win')  
