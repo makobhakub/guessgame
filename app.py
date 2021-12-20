@@ -3,11 +3,13 @@ import random as r
 
 print('Hello! What is your name?')
 my_name = input()
-
+print('and how lucky do you think you are, how many guesses do you want?')
+number_of_guesses = input()
+number_of_guesses = int(number_of_guesses)
 number = r.randint(1,20)
 print(f'Well, {my_name} I am thinking of a number between 1 and 20.')
     
-for guesses_taken in range(6):
+for guesses_taken in range(number_of_guesses):
     print('take a guess')
     guess = input()
     guess = int(guess)
@@ -25,3 +27,4 @@ if guess == number:
 
 if guess != number:
     print(f'no, the number I was thinking of was {number}')
+
