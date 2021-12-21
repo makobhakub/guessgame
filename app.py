@@ -35,6 +35,7 @@ for guesses_taken in range(number_of_guesses):
         break 
     
 if guess == number:
+   # ↓↓↓ This step (line 39) is important becuase Python is a 0 based language and if it were not for the "+1" the message would read 1 less than the real number of guesses taken 
     guesses_taken = guesses_taken + 1
     print(f'good job, {my_name}! you guessed my number in {guesses_taken} guesses!')
 
